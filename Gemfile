@@ -9,8 +9,16 @@ gem 'bootstrap-sass'
 
 #adding in custom gem
 
+gem 'devise'
 
-gem 'sqlite3'
+
+group :production do
+	gem 'pg'
+end
+
+group :development do
+	gem 'sqlite3'
+end
 
 
 # Gems used only for assets and not required
